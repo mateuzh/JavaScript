@@ -1,0 +1,130 @@
+*{
+    margin: 10px 20px 10px 20px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* # para id's e . para classes */
+
+#texto_cinza{
+    color: gray;
+    margin: 0px;
+}
+
+#capa_e_preco{
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+
+#negrito{
+    font-weight: bold;
+}
+
+#negrito_vermelho{
+    font-weight: bold;
+    color: red;
+}
+
+#p_principal{
+    text-align: justify;
+    line-height: 1.5; /*distância entre as linhas*/
+}
+
+#steve_jobs{
+    display: block; /*serve para fazer ocupar o parágrafo inteiro*/
+    margin-left: auto; /*margin-left + margin-right serve para centralizar*/
+    margin-right: auto;
+}
+
+#destaque{
+    width: 70%; /*faz o parágrafo ocupar 70% do espaço*/
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    line-height: 1.5;
+    background-color: lightslategray;
+    font-size: 20px;
+    padding: 50px;
+    border-top: 1px solid black;
+    border-right: 3px solid black;
+    border-bottom: 1px solid black;
+    border-left: 3px solid black;
+    
+    
+}
+
+#negrito_destaque{
+    font-weight: bold;
+    margin: 0px;
+}
+
+th, td{
+    border: 1px solid gray;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+}
+
+table{
+    border-collapse: collapse; /*juntará as linhas da tabela, não haverá espaçamentos entre as células*/
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.negrito_tabela{
+    font-weight: bold;
+}
+
+/*O comando abaixo faz com que as linhas pares da coluna sejam da cor escolhida, even significa par, odd é ímpar*/
+tr:nth-child(odd){
+    background-color: lightslategray;
+}
+
+/*Controla a cor onde o mouse passa*/
+tr:hover{
+    background-color: lightgray;
+    color: blue;
+}
+
+#linha_final{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* body{
+    background-color:antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    margin: 10px;
+}
+
+
+div{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+    background-color:rgb(223, 159, 64);
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+
+    text-align: center; Essas três linhas servem para centralizar o texto no meio
+    vertical-align: middle;
+    display: table-cell; 
+}
+
+.titulo{
+    font-weight: bold;
+}
+
+.edicao{
+    font-size: 2px;
+}
+
+span{
+    color: grey;
+} */

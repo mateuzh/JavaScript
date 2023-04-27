@@ -1,24 +1,24 @@
-const pessoas = require('../db/banco');
+const pessoas = require('../db/banco').default;
 
 class PessoaController {
     
-    listar(res, req){
+    listar(req, res) {
         res.json(pessoas);
     }
 
-    buscarId(res, req){
+    buscarId(req, res){
         const idReq = req.params.id;
         const pessoa = pessoas.find(p => p.id == id);
         res.json(pessoa);
     }
 
-    salvar(res, req){
+    salvar(req, res){
         const pessoa = req.body;
         pessoas.push(pessoa);
         res.json(pessoas);
     }
 
-    atualizar(res, req){
+    atualizar(req, res){
         const id = req.params.id;
         const pessoa = req.body;
         const idx = pessoas.findIndex(p => p.id == id);
@@ -26,7 +26,7 @@ class PessoaController {
         res.json(pessoas);
     }
 
-    remover(res, req){
+    remover(req, res){
         const id = req.params.id;
         const idx = pessoas.findIndex(p => p.id == id);
         pessoas.splice(idx, 1);

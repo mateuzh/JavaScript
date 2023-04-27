@@ -20,19 +20,20 @@ const objetoExemplo = new ModeloExemplo({nome: "Teste"});
 objetoExemplo.save().then(()=> console.log("Salvou!"));
 
 srv.get('/', function(req, res){
+    console.log('srv.get()');
     res.send('srv.get()');
 })
 
 srv.post('/', function(req, res){
-    res.send('Resposta em srv.post(/)');
+    res.send('srv.post()');
 })
 
 srv.put('/', function(req, res){
-    res.send('Resposta em srv.put(/)');
+    res.send('srv.put()');
 })
 
 srv.delete('/', function(req, res){
-    res.send('Resposta em srv.delete(/)');
+    res.send('srv.delete()');
 })
 
 srv.listen(3000, function(){
